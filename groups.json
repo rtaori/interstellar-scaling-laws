@@ -1,0 +1,2496 @@
+[
+  {
+    "title": "All scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false
+      },
+      {
+        "value": "Description",
+        "markdown": false
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Core scenarios",
+          "href": "?group=core_scenarios",
+          "markdown": false
+        },
+        {
+          "value": "The scenarios where we evaluate all the models.",
+          "markdown": true
+        },
+        {
+          "value": "generation, ranking_binary, multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 200.1556673687495,
+          "description": "min=1, mean=200.156, max=1000, sum=5131591 (25638)",
+          "markdown": false
+        },
+        {
+          "value": 1.5120835726045045,
+          "description": "min=1, mean=1.512, max=5.19, sum=112857.382 (74637)",
+          "markdown": false
+        },
+        {
+          "value": 7628619846.824365,
+          "description": "min=3, mean=631.584, max=8157, sum=7628619846.824 (12078559)",
+          "markdown": false
+        },
+        {
+          "value": 146153631,
+          "description": "min=0, mean=12.178, max=300, sum=146153631 (12001645)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Targeted evaluations",
+          "href": "?group=targeted_scenarios",
+          "markdown": false
+        },
+        {
+          "value": "Deep dive into different skills (e.g., language, knowledge, reasoning, etc.) and risks (e.g., disinformation, memorization/copyright).",
+          "markdown": true
+        },
+        {
+          "value": "generation, multiple_choice_separate_original, multiple_choice_joint, language_modeling, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 292.73748061661956,
+          "description": "min=1, mean=292.737, max=1000, sum=3209281 (10963)",
+          "markdown": false
+        },
+        {
+          "value": 3.3207700493276247,
+          "description": "min=1, mean=3.321, max=24.26, sum=101436.242 (30546)",
+          "markdown": false
+        },
+        {
+          "value": 1639486720.2353997,
+          "description": "min=1, mean=430.178, max=8192, sum=1639486720.235 (3811178)",
+          "markdown": false
+        },
+        {
+          "value": 856832393.1027284,
+          "description": "min=0, mean=226.693, max=10240, sum=856832393.103 (3779704)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  },
+  {
+    "title": "Core scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false
+      },
+      {
+        "value": "Description",
+        "markdown": false
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Question answering",
+          "href": "?group=question_answering",
+          "markdown": false
+        },
+        {
+          "value": "In question answering, given a question and (optionally, in open-book settings) a passage, the goal is to produce the answer. QA is a general format that captures a wide range of tasks involving varying levels of world and commonsense knowledge and reasoning abilities.",
+          "markdown": true
+        },
+        {
+          "value": "generation, multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 290.9123728813559,
+          "description": "min=1, mean=290.912, max=1000, sum=1716383 (5900)",
+          "markdown": false
+        },
+        {
+          "value": 3.237858282597483,
+          "description": "min=1, mean=3.238, max=5.19, sum=55299.382 (17079)",
+          "markdown": false
+        },
+        {
+          "value": 1670613959.2839952,
+          "description": "min=3, mean=772.981, max=7972, sum=1670613959.284 (2161262)",
+          "markdown": false
+        },
+        {
+          "value": 104806549,
+          "description": "min=0, mean=48.894, max=300, sum=104806549 (2143562)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Information retrieval",
+          "href": "?group=information_retrieval",
+          "markdown": false
+        },
+        {
+          "value": "In information retrieval, given a query and a set of candidate documents, the goal is to produce a ranking of the documents.",
+          "markdown": true
+        },
+        {
+          "value": "ranking_binary",
+          "markdown": false
+        },
+        {
+          "value": 313.0,
+          "description": "min=4, mean=313, max=1000, sum=172776 (552)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 3198654011.917027,
+          "description": "min=322, mean=483.377, max=743, sum=3198654011.917 (6617307)",
+          "markdown": false
+        },
+        {
+          "value": 15112737,
+          "description": "min=0, mean=2.284, max=5, sum=15112737 (6615651)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Summarization",
+          "href": "?group=summarization",
+          "markdown": false
+        },
+        {
+          "value": "In text summarization, given a piece of text (paragraph or document), the goal is to produce a much shorter summary.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=466, mean=500, max=534, sum=311000 (622)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1866 (1866)",
+          "markdown": false
+        },
+        {
+          "value": 428793645.85497266,
+          "description": "min=26, mean=1370.534, max=2004, sum=428793645.855 (312866)",
+          "markdown": false
+        },
+        {
+          "value": 18274717,
+          "description": "min=0, mean=58.761, max=128, sum=18274717 (311000)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Sentiment analysis",
+          "href": "?group=sentiment_analysis",
+          "markdown": false
+        },
+        {
+          "value": "In sentiment classification, given a text (e.g., movie review), the goal is to predict the sentiment (positive or negative).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 745.6,
+          "description": "min=148, mean=745.6, max=1000, sum=313152 (420)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1260 (1260)",
+          "markdown": false
+        },
+        {
+          "value": 411272818.7867063,
+          "description": "min=201, mean=1308.07, max=4222, sum=411272818.787 (314412)",
+          "markdown": false
+        },
+        {
+          "value": 763145,
+          "description": "min=0, mean=2.437, max=5, sum=763145 (313152)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Toxicity detection",
+          "href": "?group=toxicity_detection",
+          "markdown": false
+        },
+        {
+          "value": "In toxicity detection, given a text, the goal is to predict whether the text has toxic content.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 170.41142857142856,
+          "description": "min=1, mean=170.411, max=683, sum=2505048 (14700)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=44100 (44100)",
+          "markdown": false
+        },
+        {
+          "value": 1814267157.7061684,
+          "description": "min=222, mean=711.715, max=1760, sum=1814267157.706 (2549148)",
+          "markdown": false
+        },
+        {
+          "value": 6296618,
+          "description": "min=0, mean=2.514, max=5, sum=6296618 (2505048)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Text classification",
+          "href": "?group=miscellaneous_text_classification",
+          "markdown": false
+        },
+        {
+          "value": "Text classification is a general format that aims to classify text into a set of categories. This includes a wide range of classification tasks where the input is text.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 32.8780487804878,
+          "description": "min=1, mean=32.878, max=40, sum=113232 (3444)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=10332 (10332)",
+          "markdown": false
+        },
+        {
+          "value": 105018253.275636,
+          "description": "min=162, mean=849.91, max=8157, sum=105018253.276 (123564)",
+          "markdown": false
+        },
+        {
+          "value": 899865,
+          "description": "min=0, mean=7.947, max=30, sum=899865 (113232)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  },
+  {
+    "title": "Targeted evaluations",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false
+      },
+      {
+        "value": "Description",
+        "markdown": false
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Language",
+          "href": "?group=language",
+          "markdown": false
+        },
+        {
+          "value": "Coverage over different genres (via language modeling) and testing linguistic capabilities.",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, language_modeling, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 640.7539682539683,
+          "description": "min=28, mean=640.754, max=1000, sum=242205 (378)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 618884568.1611515,
+          "description": "min=1, mean=1235.775, max=8192, sum=618884568.161 (500807)",
+          "markdown": false
+        },
+        {
+          "value": 612961608,
+          "description": "min=1, mean=1225.205, max=8668, sum=612961608 (500293)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Knowledge",
+          "href": "?group=knowledge",
+          "markdown": false
+        },
+        {
+          "value": "World and commonsense knowledge.",
+          "markdown": true
+        },
+        {
+          "value": "generation, multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 238.316333938294,
+          "description": "min=1, mean=238.316, max=1000, sum=1313123 (5510)",
+          "markdown": false
+        },
+        {
+          "value": 5.295319751509311,
+          "description": "min=1.333, mean=5.295, max=24.26, sum=84243.242 (15909)",
+          "markdown": false
+        },
+        {
+          "value": 259628463.03684092,
+          "description": "min=3, mean=147.782, max=847, sum=259628463.037 (1756832)",
+          "markdown": false
+        },
+        {
+          "value": 67949695,
+          "description": "min=0, mean=39.045, max=300, sum=67949695 (1740302)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Reasoning",
+          "href": "?group=reasoning",
+          "markdown": false
+        },
+        {
+          "value": "Reasoning capabilities, both synthetic and real.",
+          "markdown": true
+        },
+        {
+          "value": "generation, multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 421.4397694524496,
+          "description": "min=65, mean=421.44, max=1000, sum=1462396 (3470)",
+          "markdown": false
+        },
+        {
+          "value": 1.207492795389049,
+          "description": "min=1, mean=1.207, max=5, sum=12570 (10410)",
+          "markdown": false
+        },
+        {
+          "value": 716022134.543844,
+          "description": "min=54, mean=527.206, max=3505, sum=716022134.544 (1358146)",
+          "markdown": false
+        },
+        {
+          "value": 27907191.102729637,
+          "description": "min=0, mean=20.695, max=600, sum=27907191.103 (1348528)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Harms",
+          "href": "?group=harms",
+          "markdown": false
+        },
+        {
+          "value": "Closer analysis of various social harms (e.g., copyright, disinformation, social bias, toxicity).",
+          "markdown": true
+        },
+        {
+          "value": "generation, multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 326.22882882882885,
+          "description": "min=1, mean=326.229, max=1000, sum=181057 (555)",
+          "markdown": false
+        },
+        {
+          "value": 1.3676880222841226,
+          "description": "min=1, mean=1.368, max=3, sum=1473 (1077)",
+          "markdown": false
+        },
+        {
+          "value": 36189801.49353865,
+          "description": "min=2, mean=199.126, max=1640, sum=36189801.494 (181743)",
+          "markdown": false
+        },
+        {
+          "value": 147825112.0,
+          "description": "min=0, mean=820.881, max=10240, sum=147825112 (180081)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Efficiency",
+          "href": "?group=efficiency",
+          "markdown": false
+        },
+        {
+          "value": "Evaluating fine-grained training and inference efficiency",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=10500 (1050)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3150 (3150)",
+          "markdown": false
+        },
+        {
+          "value": 8761752.999999981,
+          "description": "min=1, mean=641.887, max=1536, sum=8761753.0 (13650)",
+          "markdown": false
+        },
+        {
+          "value": 188787,
+          "description": "min=0, mean=17.98, max=64, sum=188787 (10500)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vary number of in-context examples",
+          "href": "?group=ablation_in_context",
+          "markdown": false
+        },
+        {
+          "value": "Vary the number of in-context training examples.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 228.29588276343335,
+          "description": "min=1, mean=228.296, max=1000, sum=3925776 (17196)",
+          "markdown": false
+        },
+        {
+          "value": 1.0333523927215653,
+          "description": "min=1, mean=1.033, max=2.17, sum=53308.583 (51588)",
+          "markdown": false
+        },
+        {
+          "value": 3391241662.5063267,
+          "description": "min=13, mean=852.635, max=7892, sum=3391241662.506 (3977364)",
+          "markdown": false
+        },
+        {
+          "value": 105764010,
+          "description": "min=0, mean=26.941, max=300, sum=105764010 (3925776)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vary multiple-choice strategy",
+          "href": "?group=ablation_multiple_choice",
+          "markdown": false
+        },
+        {
+          "value": "Vary the adapation strategy for multiple-choice questions.",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 214.6376465479809,
+          "description": "min=1, mean=214.638, max=1000, sum=988621 (4606)",
+          "markdown": false
+        },
+        {
+          "value": 3.9858809757888545,
+          "description": "min=2, mean=3.986, max=5.19, sum=48344.75 (12129)",
+          "markdown": false
+        },
+        {
+          "value": 383374611.5032442,
+          "description": "min=3, mean=202.227, max=1422, sum=383374611.503 (1895760)",
+          "markdown": false
+        },
+        {
+          "value": 52136513,
+          "description": "min=1, mean=27.704, max=292, sum=52136513 (1881942)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vary prompting",
+          "href": "?group=ablation_prompts",
+          "markdown": false
+        },
+        {
+          "value": "Vary the instructions and labels for input/output.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 232.06652139006766,
+          "description": "min=1, mean=232.067, max=1000, sum=4046776 (17438)",
+          "markdown": false
+        },
+        {
+          "value": 1.034187736279392,
+          "description": "min=1, mean=1.034, max=2.17, sum=54102.497 (52314)",
+          "markdown": false
+        },
+        {
+          "value": 3627418415.786289,
+          "description": "min=21, mean=884.933, max=7892, sum=3627418415.786 (4099090)",
+          "markdown": false
+        },
+        {
+          "value": 112204839,
+          "description": "min=0, mean=27.727, max=300, sum=112204839 (4046776)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Robustness to contrast sets",
+          "href": "?group=robustness_contrast_sets",
+          "markdown": false
+        },
+        {
+          "value": "Evaluating equivariance to semantics-altering perturbations",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 555.2857142857143,
+          "description": "min=64, mean=555.286, max=1000, sum=653016 (1176)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3528 (3528)",
+          "markdown": false
+        },
+        {
+          "value": 730353369.8237306,
+          "description": "min=201, mean=1112.421, max=4222, sum=730353369.824 (656544)",
+          "markdown": false
+        },
+        {
+          "value": 1593660,
+          "description": "min=0, mean=2.44, max=5, sum=1593660 (653016)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  },
+  {
+    "title": "Scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false
+      },
+      {
+        "value": "Description",
+        "markdown": false
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "BoolQ",
+          "href": "?group=boolq",
+          "markdown": false
+        },
+        {
+          "value": "The BoolQ benchmark for binary (yes/no) question answering [(Clark et al., 2019)](https://aclanthology.org/N19-1300/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 641.2,
+          "description": "min=74, mean=641.2, max=1000, sum=269304 (420)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1260 (1260)",
+          "markdown": false
+        },
+        {
+          "value": 237175495.2389194,
+          "description": "min=267, mean=876.597, max=2327, sum=237175495.239 (270564)",
+          "markdown": false
+        },
+        {
+          "value": 659083,
+          "description": "min=0, mean=2.447, max=5, sum=659083 (269304)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "NarrativeQA",
+          "href": "?group=narrative_qa",
+          "markdown": false
+        },
+        {
+          "value": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 205.1,
+          "description": "min=39, mean=205.1, max=355, sum=172284 (840)",
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=5040 (2520)",
+          "markdown": false
+        },
+        {
+          "value": 294963878.55613536,
+          "description": "min=302, mean=1687.398, max=6503, sum=294963878.556 (174804)",
+          "markdown": false
+        },
+        {
+          "value": 5225023,
+          "description": "min=0, mean=30.328, max=100, sum=5225023 (172284)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "NaturalQuestions (closed-book)",
+          "href": "?group=natural_qa_closedbook",
+          "markdown": false
+        },
+        {
+          "value": "The NaturalQuestions [(Kwiatkowski et al., 2019)](https://aclanthology.org/Q19-1026/) benchmark for question answering based on naturally-occurring queries through Google Search. The input does not include the Wikipedia page with the answer.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 575.2,
+          "description": "min=7, mean=575.2, max=1000, sum=241584 (420)",
+          "markdown": false
+        },
+        {
+          "value": 1.951045463132741,
+          "description": "min=1.333, mean=1.951, max=2.286, sum=2458.317 (1260)",
+          "markdown": false
+        },
+        {
+          "value": 28693949.66021688,
+          "description": "min=90, mean=118.158, max=164, sum=28693949.66 (242844)",
+          "markdown": false
+        },
+        {
+          "value": 19730716,
+          "description": "min=0, mean=81.672, max=300, sum=19730716 (241584)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "NaturalQuestions (open-book)",
+          "href": "?group=natural_qa_openbook_longans",
+          "markdown": false
+        },
+        {
+          "value": "The NaturalQuestions [(Kwiatkowski et al., 2019)](https://aclanthology.org/Q19-1026/) benchmark for question answering based on naturally-occurring queries through Google Search. The input includes the Wikipedia page with the answer.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 678.4,
+          "description": "min=176, mean=678.4, max=1000, sum=264576 (390)",
+          "markdown": false
+        },
+        {
+          "value": 2.0062147313846386,
+          "description": "min=1.774, mean=2.006, max=2.17, sum=2347.271 (1170)",
+          "markdown": false
+        },
+        {
+          "value": 320049876.4903588,
+          "description": "min=21, mean=1204.345, max=7892, sum=320049876.49 (265746)",
+          "markdown": false
+        },
+        {
+          "value": 28343153,
+          "description": "min=0, mean=107.127, max=300, sum=28343153 (264576)",
+          "markdown": false
+        },
+        {
+          "value": 26,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "QuAC (Question Answering in Context)",
+          "href": "?group=quac",
+          "markdown": false
+        },
+        {
+          "value": "The QuAC benchmark for question answering in the context of dialogues [(Choi et al., 2018)](https://aclanthology.org/D18-1241/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 864.2,
+          "description": "min=435, mean=864.2, max=1000, sum=362964 (420)",
+          "markdown": false
+        },
+        {
+          "value": 3.6526405853506643,
+          "description": "min=3.643, mean=3.653, max=3.676, sum=4602.327 (1260)",
+          "markdown": false
+        },
+        {
+          "value": 611805725.5964515,
+          "description": "min=477, mean=1679.751, max=7972, sum=611805725.596 (364224)",
+          "markdown": false
+        },
+        {
+          "value": 19434067,
+          "description": "min=0, mean=53.543, max=100, sum=19434067 (362964)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "HellaSwag",
+          "href": "?group=hellaswag",
+          "markdown": false
+        },
+        {
+          "value": "The HellaSwag benchmark for commonsense reasoning in question answering [(Zellers et al., 2019)](https://aclanthology.org/P19-1472/).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 615.2,
+          "description": "min=4, mean=615.2, max=1000, sum=70748 (115)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 28269204.030225035,
+          "description": "min=12, mean=99.772, max=241, sum=28269204.03 (283337)",
+          "markdown": false
+        },
+        {
+          "value": 28136997,
+          "description": "min=12, mean=99.427, max=241, sum=28136997 (282992)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "OpenbookQA",
+          "href": "?group=openbookqa",
+          "markdown": false
+        },
+        {
+          "value": "The OpenbookQA benchmark for commonsense-intensive open book question answering [(Mihaylov et al., 2018)](https://aclanthology.org/D18-1260/).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 333.75,
+          "description": "min=14, mean=333.75, max=500, sum=30705 (92)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 2978320.493904356,
+          "description": "min=3, mean=12.111, max=134, sum=2978320.494 (245916)",
+          "markdown": false
+        },
+        {
+          "value": 2973292,
+          "description": "min=3, mean=12.104, max=134, sum=2973292 (245640)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "TruthfulQA",
+          "href": "?group=truthful_qa",
+          "markdown": false
+        },
+        {
+          "value": "The TruthfulQA benchmarking for measuring model truthfulness and commonsense knowledge in question answering [(Lin et al., 2022)](https://aclanthology.org/2022.acl-long.229/).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 386.0185614849188,
+          "description": "min=1, mean=386.019, max=654, sum=166374 (431)",
+          "markdown": false
+        },
+        {
+          "value": 4.893631826506858,
+          "description": "min=4.056, mean=4.894, max=5.19, sum=6327.466 (1293)",
+          "markdown": false
+        },
+        {
+          "value": 77483531.51798767,
+          "description": "min=23, mean=462.127, max=665, sum=77483531.518 (167667)",
+          "markdown": false
+        },
+        {
+          "value": 166374,
+          "description": "min=1, mean=1, max=1, sum=166374 (166374)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MMLU (Massive Multitask Language Understanding)",
+          "href": "?group=mmlu",
+          "markdown": false
+        },
+        {
+          "value": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 49.72727272727273,
+          "description": "min=1, mean=49.727, max=114, sum=137844 (2772)",
+          "markdown": false
+        },
+        {
+          "value": 4.0,
+          "description": "min=4, mean=4, max=4, sum=33264 (8316)",
+          "markdown": false
+        },
+        {
+          "value": 69193977.69980648,
+          "description": "min=279, mean=473.413, max=847, sum=69193977.7 (146160)",
+          "markdown": false
+        },
+        {
+          "value": 137844,
+          "description": "min=1, mean=1, max=1, sum=137844 (137844)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MS MARCO (regular track)",
+          "href": "?group=msmarco_regular",
+          "markdown": false
+        },
+        {
+          "value": "The MS MARCO benchmark's regular track for passage retrieval in information retrieval [(https://microsoft.github.io/msmarco/)](https://microsoft.github.io/msmarco/).",
+          "markdown": true
+        },
+        {
+          "value": "ranking_binary",
+          "markdown": false
+        },
+        {
+          "value": 480.8,
+          "description": "min=4, mean=480.8, max=1000, sum=165876 (345)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 2464068209.702729,
+          "description": "min=322, mean=486.309, max=743, sum=2464068209.703 (5066877)",
+          "markdown": false
+        },
+        {
+          "value": 11581428,
+          "description": "min=0, mean=2.286, max=5, sum=11581428 (5065842)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MS MARCO (TREC track)",
+          "href": "?group=msmarco_trec",
+          "markdown": false
+        },
+        {
+          "value": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).",
+          "markdown": true
+        },
+        {
+          "value": "ranking_binary",
+          "markdown": false
+        },
+        {
+          "value": 33.333333333333336,
+          "description": "min=14, mean=33.333, max=43, sum=6900 (207)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 734585802.2142844,
+          "description": "min=322, mean=473.795, max=650, sum=734585802.214 (1550430)",
+          "markdown": false
+        },
+        {
+          "value": 3531309,
+          "description": "min=0, mean=2.279, max=5, sum=3531309 (1549809)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "CNN/DailyMail",
+          "href": "?group=summarization_cnndm",
+          "markdown": false
+        },
+        {
+          "value": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=466, mean=500, max=534, sum=139000 (278)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=834 (834)",
+          "markdown": false
+        },
+        {
+          "value": 211652928.8404305,
+          "description": "min=160, mean=1513.601, max=1921, sum=211652928.84 (139834)",
+          "markdown": false
+        },
+        {
+          "value": 13090833,
+          "description": "min=0, mean=94.179, max=128, sum=13090833 (139000)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "XSUM",
+          "href": "?group=summarization_xsum",
+          "markdown": false
+        },
+        {
+          "value": "The XSUM benchmark for text summarization of BBC news articles [(Narayan et al., 2018)](https://aclanthology.org/D18-1206/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=482, mean=500, max=518, sum=172000 (344)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1032 (1032)",
+          "markdown": false
+        },
+        {
+          "value": 217140717.01454705,
+          "description": "min=26, mean=1254.917, max=2004, sum=217140717.015 (173032)",
+          "markdown": false
+        },
+        {
+          "value": 5183884,
+          "description": "min=0, mean=30.139, max=64, sum=5183884 (172000)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "IMDB",
+          "href": "?group=imdb",
+          "markdown": false
+        },
+        {
+          "value": "The IMDB benchmark for sentiment analysis in movie review [(Maas et al., 2011)](https://aclanthology.org/P11-1015/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 745.6,
+          "description": "min=148, mean=745.6, max=1000, sum=313152 (420)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1260 (1260)",
+          "markdown": false
+        },
+        {
+          "value": 411272818.7867063,
+          "description": "min=201, mean=1308.07, max=4222, sum=411272818.787 (314412)",
+          "markdown": false
+        },
+        {
+          "value": 763145,
+          "description": "min=0, mean=2.437, max=5, sum=763145 (313152)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "RAFT (Real-world Annotated Few-Shot)",
+          "href": "?group=raft",
+          "markdown": false
+        },
+        {
+          "value": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 32.8780487804878,
+          "description": "min=1, mean=32.878, max=40, sum=113232 (3444)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=10332 (10332)",
+          "markdown": false
+        },
+        {
+          "value": 105018253.275636,
+          "description": "min=162, mean=849.91, max=8157, sum=105018253.276 (123564)",
+          "markdown": false
+        },
+        {
+          "value": 899865,
+          "description": "min=0, mean=7.947, max=30, sum=899865 (113232)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "CivilComments",
+          "href": "?group=civil_comments",
+          "markdown": false
+        },
+        {
+          "value": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 170.41142857142856,
+          "description": "min=1, mean=170.411, max=683, sum=2505048 (14700)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=44100 (44100)",
+          "markdown": false
+        },
+        {
+          "value": 1814267157.7061684,
+          "description": "min=222, mean=711.715, max=1760, sum=1814267157.706 (2549148)",
+          "markdown": false
+        },
+        {
+          "value": 6296618,
+          "description": "min=0, mean=2.514, max=5, sum=6296618 (2505048)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "ICE (International Corpus of English)",
+          "href": "?group=ice",
+          "markdown": false
+        },
+        {
+          "value": "The International Corpus of English (ICE) drawn from English speakers from various places in the world, initiated by [Greenbaum (1991)](https://www.cambridge.org/core/journals/english-today/article/abs/ice-the-international-corpus-of-english/47808205394C538393C3FD8E62E5E701).",
+          "markdown": true
+        },
+        {
+          "value": "language_modeling",
+          "markdown": false
+        },
+        {
+          "value": 489.8333333333333,
+          "description": "min=200, mean=489.833, max=694, sum=67597 (138)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 308917477.9118436,
+          "description": "min=162, mean=2104.945, max=8192, sum=308917477.912 (146758)",
+          "markdown": false
+        },
+        {
+          "value": 308075048,
+          "description": "min=162, mean=2101.18, max=8367, sum=308075048 (146620)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "The Pile",
+          "href": "?group=the_pile",
+          "markdown": false
+        },
+        {
+          "value": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).",
+          "markdown": true
+        },
+        {
+          "value": "language_modeling",
+          "markdown": false
+        },
+        {
+          "value": 481.015873015873,
+          "description": "min=28, mean=481.016, max=1000, sum=60608 (126)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 308100722.4723117,
+          "description": "min=1, mean=1793.379, max=8192, sum=308100722.472 (171799)",
+          "markdown": false
+        },
+        {
+          "value": 303017329,
+          "description": "min=1, mean=1765.084, max=8668, sum=303017329 (171673)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "TwitterAAE",
+          "href": "?group=twitter_aae",
+          "markdown": false
+        },
+        {
+          "value": "The TwitterAAE corpus of [Blodgett et al. (2016)](https://aclanthology.org/D16-1120/) for measuring language model performance in tweets as a function of speaker dialect.",
+          "markdown": true
+        },
+        {
+          "value": "language_modeling",
+          "markdown": false
+        },
+        {
+          "value": 1000.0,
+          "description": "min=1000, mean=1000, max=1000, sum=46000 (46)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 730599.8700000001,
+          "description": "min=1, mean=15.867, max=297, sum=730599.87 (46046)",
+          "markdown": false
+        },
+        {
+          "value": 735164,
+          "description": "min=1, mean=15.982, max=301, sum=735164 (46000)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "TwitterAAE (AA)",
+          "href": "?group=twitter_aae_aa",
+          "markdown": false
+        },
+        {
+          "value": "The TwitterAAE corpus of [Blodgett et al. (2016)](https://aclanthology.org/D16-1120/) for measuring language model performance on African-American-aligned Tweets.",
+          "markdown": true
+        },
+        {
+          "value": "language_modeling",
+          "markdown": false
+        },
+        {
+          "value": 1000.0,
+          "description": "min=1000, mean=1000, max=1000, sum=23000 (23)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 332016.68499999994,
+          "description": "min=1, mean=14.421, max=161, sum=332016.685 (23023)",
+          "markdown": false
+        },
+        {
+          "value": 333679,
+          "description": "min=1, mean=14.508, max=161, sum=333679 (23000)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "TwitterAAE (white)",
+          "href": "?group=twitter_aae_white",
+          "markdown": false
+        },
+        {
+          "value": "The TwitterAAE corpus of [Blodgett et al. (2016)](https://aclanthology.org/D16-1120/) for measuring language model performance on White-aligned Tweets.",
+          "markdown": true
+        },
+        {
+          "value": "language_modeling",
+          "markdown": false
+        },
+        {
+          "value": 1000.0,
+          "description": "min=1000, mean=1000, max=1000, sum=23000 (23)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 398583.1850000001,
+          "description": "min=1, mean=17.312, max=297, sum=398583.185 (23023)",
+          "markdown": false
+        },
+        {
+          "value": 401485,
+          "description": "min=1, mean=17.456, max=301, sum=401485 (23000)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BLiMP (The Benchmark of Linguistic Minimal Pairs for English)",
+          "href": "?group=blimp",
+          "markdown": false
+        },
+        {
+          "value": "The Benchmark of Linguistic Minimal Pairs for English (BLiMP) for measuring performance on linguistic phenomena using minimal pair design [(Warstadt et al., 2020)](https://aclanthology.org/2020.tacl-1.25/).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 1000.0,
+          "description": "min=1000, mean=1000, max=1000, sum=68000 (68)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 1135767.9069999983,
+          "description": "min=3, mean=8.339, max=23, sum=1135767.907 (136204)",
+          "markdown": false
+        },
+        {
+          "value": 1134067,
+          "description": "min=3, mean=8.339, max=23, sum=1134067 (136000)",
+          "markdown": false
+        },
+        {
+          "value": 23,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "WikiFact",
+          "href": "?group=wikifact",
+          "markdown": false
+        },
+        {
+          "value": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 396.35,
+          "description": "min=15, mean=396.35, max=850, sum=665868 (1680)",
+          "markdown": false
+        },
+        {
+          "value": 8.371717994353245,
+          "description": "min=2.156, mean=8.372, max=24.26, sum=42193.459 (5040)",
+          "markdown": false
+        },
+        {
+          "value": 53009479.634703524,
+          "description": "min=35, mean=79.012, max=145, sum=53009479.635 (670908)",
+          "markdown": false
+        },
+        {
+          "value": 16804472,
+          "description": "min=0, mean=25.237, max=40, sum=16804472 (665868)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "bAbI",
+          "href": "?group=babi_qa",
+          "markdown": false
+        },
+        {
+          "value": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=91, mean=500, max=909, sum=360000 (720)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=2160 (2160)",
+          "markdown": false
+        },
+        {
+          "value": 268174685.23309138,
+          "description": "min=212, mean=740.487, max=3505, sum=268174685.233 (362160)",
+          "markdown": false
+        },
+        {
+          "value": 939370,
+          "description": "min=0, mean=2.609, max=5, sum=939370 (360000)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Dyck",
+          "href": "?group=dyck_language",
+          "markdown": false
+        },
+        {
+          "value": "Scenario testing hierarchical reasoning through the Dyck formal languages [(Suzgun et al., 2019)](https://aclanthology.org/W19-3905/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=500, mean=500, max=500, sum=45000 (90)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=270 (270)",
+          "markdown": false
+        },
+        {
+          "value": 8140858.829999991,
+          "description": "min=125, mean=179.829, max=322, sum=8140858.83 (45270)",
+          "markdown": false
+        },
+        {
+          "value": 153417,
+          "description": "min=0, mean=3.409, max=5, sum=153417 (45000)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Synthetic reasoning (abstract symbols)",
+          "href": "?group=synthetic_reasoning",
+          "markdown": false
+        },
+        {
+          "value": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=485, mean=500, max=515, sum=450000 (900)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=2700 (2700)",
+          "markdown": false
+        },
+        {
+          "value": 119478835.18410498,
+          "description": "min=148, mean=282.656, max=485, sum=119478835.184 (422700)",
+          "markdown": false
+        },
+        {
+          "value": 5037286.249764792,
+          "description": "min=0, mean=11.988, max=50, sum=5037286.25 (420180)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Synthetic reasoning (natural language)",
+          "href": "?group=synthetic_reasoning_natural",
+          "markdown": false
+        },
+        {
+          "value": "Synthetic reasoning tasks defined using simple natural language based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=485, mean=500, max=515, sum=180000 (360)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1080 (1080)",
+          "markdown": false
+        },
+        {
+          "value": 66929643.11356233,
+          "description": "min=307, mean=395.846, max=485, sum=66929643.114 (169080)",
+          "markdown": false
+        },
+        {
+          "value": 1135466.6058252426,
+          "description": "min=0, mean=6.756, max=20, sum=1135466.606 (168072)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GSM8K (Grade school math word problems)",
+          "href": "?group=gsm",
+          "markdown": false
+        },
+        {
+          "value": "The grade school math word problems dataset (GSM8K) for testing mathematical reasoning on grade-school math problems [(Cobbe et al., 2021)](https://arxiv.org/pdf/2110.14168.pdf).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 1000.0,
+          "description": "min=1000, mean=1000, max=1000, sum=90000 (90)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=270 (270)",
+          "markdown": false
+        },
+        {
+          "value": 54470572.95000003,
+          "description": "min=346, mean=603.418, max=831, sum=54470572.95 (90270)",
+          "markdown": false
+        },
+        {
+          "value": 18736458,
+          "description": "min=5, mean=208.183, max=400, sum=18736458 (90000)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MATH",
+          "href": "?group=math_regular",
+          "markdown": false
+        },
+        {
+          "value": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 437.0,
+          "description": "min=437, mean=437, max=437, sum=39330 (90)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=270 (270)",
+          "markdown": false
+        },
+        {
+          "value": 105129.90617848956,
+          "description": "min=343.787, mean=389.37, max=409.579, sum=105129.906 (270)",
+          "markdown": false
+        },
+        {
+          "value": 1496.3478260869572,
+          "description": "min=1.288, mean=5.542, max=20, sum=1496.348 (270)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MATH (chain-of-thoughts)",
+          "href": "?group=math_chain_of_thought",
+          "markdown": false
+        },
+        {
+          "value": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 437.0,
+          "description": "min=437, mean=437, max=437, sum=39330 (90)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=270 (270)",
+          "markdown": false
+        },
+        {
+          "value": 307044.53546910745,
+          "description": "min=463.529, mean=1137.202, max=1272.81, sum=307044.535 (270)",
+          "markdown": false
+        },
+        {
+          "value": 49425.89931350115,
+          "description": "min=41.547, mean=183.059, max=400, sum=49425.899 (270)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "HumanEval (Code)",
+          "href": "?group=code_humaneval",
+          "markdown": false
+        },
+        {
+          "value": "The HumanEval benchmark for measuring functional correctness for synthesizing programs from docstrings [(Chen et al., 2021)](https://arxiv.org/pdf/2107.03374.pdf).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 164.0,
+          "description": "min=164, mean=164, max=164, sum=328 (2)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=6 (6)",
+          "markdown": false
+        },
+        {
+          "value": 56896.08536585366,
+          "description": "min=54, mean=170.348, max=628, sum=56896.085 (334)",
+          "markdown": false
+        },
+        {
+          "value": 26828,
+          "description": "min=8, mean=81.793, max=600, sum=26828 (328)",
+          "markdown": false
+        },
+        {
+          "value": 2,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "LegalSupport",
+          "href": "?group=legal_support",
+          "markdown": false
+        },
+        {
+          "value": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=489, mean=500, max=511, sum=72000 (144)",
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=864 (432)",
+          "markdown": false
+        },
+        {
+          "value": 41698517.47006344,
+          "description": "min=299, mean=575.692, max=888, sum=41698517.47 (72432)",
+          "markdown": false
+        },
+        {
+          "value": 72000,
+          "description": "min=1, mean=1, max=1, sum=72000 (72000)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "LSAT",
+          "href": "?group=lsat_qa",
+          "markdown": false
+        },
+        {
+          "value": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 230.5,
+          "description": "min=230, mean=230.5, max=231, sum=33192 (144)",
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=2160 (432)",
+          "markdown": false
+        },
+        {
+          "value": 35089249.351270415,
+          "description": "min=301, mean=1043.577, max=1418, sum=35089249.351 (33624)",
+          "markdown": false
+        },
+        {
+          "value": 33192,
+          "description": "min=1, mean=1, max=1, sum=33192 (33192)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Data imputation",
+          "href": "?group=entity_data_imputation",
+          "markdown": false
+        },
+        {
+          "value": "Scenario from [Mei et al. (2021)](https://ieeexplore.ieee.org/document/9458712/) that tests the ability to impute missing entities in a data table.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 106.0,
+          "description": "min=65, mean=106, max=156, sum=35616 (336)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1008 (1008)",
+          "markdown": false
+        },
+        {
+          "value": 10129251.246243328,
+          "description": "min=197, mean=276.574, max=472, sum=10129251.246 (36624)",
+          "markdown": false
+        },
+        {
+          "value": 115834,
+          "description": "min=0, mean=3.252, max=5, sum=115834 (35616)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Entity matching",
+          "href": "?group=entity_matching",
+          "markdown": false
+        },
+        {
+          "value": "Scenario from Magellan [(Konda et al., 2016)](https://dl.acm.org/doi/10.14778/3007263.3007314) that tests the ability to determine if two entities match.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 233.33333333333334,
+          "description": "min=91, mean=233.333, max=507, sum=117600 (504)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1512 (1512)",
+          "markdown": false
+        },
+        {
+          "value": 99920710.63849002,
+          "description": "min=248, mean=838.88, max=1566, sum=99920710.638 (119112)",
+          "markdown": false
+        },
+        {
+          "value": 285600,
+          "description": "min=1, mean=2.429, max=5, sum=285600 (117600)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Copyright (text)",
+          "href": "?group=copyright_text",
+          "markdown": false
+        },
+        {
+          "value": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 405.26446280991735,
+          "description": "min=3, mean=405.264, max=979, sum=49037 (121)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=363 (363)",
+          "markdown": false
+        },
+        {
+          "value": 6889448.3844739655,
+          "description": "min=13, mean=142.282, max=1640, sum=6889448.384 (48421)",
+          "markdown": false
+        },
+        {
+          "value": 139155461.0,
+          "description": "min=0, mean=2895.393, max=10240, sum=139155461 (48061)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Copyright (code)",
+          "href": "?group=copyright_code",
+          "markdown": false
+        },
+        {
+          "value": "Scenario introduced in this work to measure copyright and memorization behavior for code, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 1000.0,
+          "description": "min=1000, mean=1000, max=1000, sum=4000 (4)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=12 (12)",
+          "markdown": false
+        },
+        {
+          "value": 321736.32200000004,
+          "description": "min=6, mean=80.194, max=299, sum=321736.322 (4012)",
+          "markdown": false
+        },
+        {
+          "value": 4049502,
+          "description": "min=35, mean=1012.375, max=1024, sum=4049502 (4000)",
+          "markdown": false
+        },
+        {
+          "value": 2,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Disinformation (reiteration)",
+          "href": "?group=disinformation_reiteration",
+          "markdown": false
+        },
+        {
+          "value": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 34.0,
+          "description": "min=31, mean=34, max=37, sum=5712 (168)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=504 (504)",
+          "markdown": false
+        },
+        {
+          "value": 1879236.6015693136,
+          "description": "min=221, mean=302.322, max=387, sum=1879236.602 (6216)",
+          "markdown": false
+        },
+        {
+          "value": 1124826,
+          "description": "min=30, mean=196.923, max=500, sum=1124826 (5712)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Disinformation (wedging)",
+          "href": "?group=disinformation_wedging",
+          "markdown": false
+        },
+        {
+          "value": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to generate divisive and wedging content.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 2.75,
+          "description": "min=1, mean=2.75, max=5, sum=308 (112)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 97521.50000000003,
+          "description": "min=64, mean=151.431, max=286, sum=97521.5 (644)",
+          "markdown": false
+        },
+        {
+          "value": 93117,
+          "description": "min=46, mean=302.328, max=450, sum=93117 (308)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BBQ (Bias Benchmark for Question Answering)",
+          "href": "?group=bbq",
+          "markdown": false
+        },
+        {
+          "value": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_separate_original, multiple_choice_joint, multiple_choice_separate_calibrated",
+          "markdown": false
+        },
+        {
+          "value": 1000.0,
+          "description": "min=1000, mean=1000, max=1000, sum=66000 (66)",
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=594 (198)",
+          "markdown": false
+        },
+        {
+          "value": 26250089.725000016,
+          "description": "min=262, mean=396.539, max=518, sum=26250089.725 (66198)",
+          "markdown": false
+        },
+        {
+          "value": 66000,
+          "description": "min=1, mean=1, max=1, sum=66000 (66000)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BOLD (Bias in Open-Ended Language Generation Dataset)",
+          "href": "?group=bold",
+          "markdown": false
+        },
+        {
+          "value": "The Bias in Open-Ended Language Generation Dataset (BOLD) for measuring biases and toxicity in open-ended language generation [(Dhamala et al., 2021)](https://dl.acm.org/doi/10.1145/3442188.3445924).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 1000.0,
+          "description": "min=1000, mean=1000, max=1000, sum=28000 (28)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 320772.43899999984,
+          "description": "min=5, mean=11.422, max=34, sum=320772.439 (28084)",
+          "markdown": false
+        },
+        {
+          "value": 550738,
+          "description": "min=0, mean=19.669, max=20, sum=550738 (28000)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "RealToxicityPrompts",
+          "href": "?group=real_toxicity_prompts",
+          "markdown": false
+        },
+        {
+          "value": "The RealToxicityPrompts dataset for measuring toxicity in prompted model generations [(Gehman et al., 2020)](https://aclanthology.org/2020.findings-emnlp.301/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 500.0,
+          "description": "min=223, mean=500, max=777, sum=28000 (56)",
+          "markdown": false
+        },
+        {
+          "markdown": false
+        },
+        {
+          "value": 430996.52149523,
+          "description": "min=2, mean=15.301, max=45, sum=430996.521 (28168)",
+          "markdown": false
+        },
+        {
+          "value": 2785468,
+          "description": "min=0, mean=99.481, max=100, sum=2785468 (28000)",
+          "markdown": false
+        },
+        {
+          "value": 28,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Synthetic efficiency",
+          "href": "?group=synthetic_efficiency",
+          "markdown": false
+        },
+        {
+          "value": "Scenario introduced in this work to better understand inference runtime performance of various models.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=10500 (1050)",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3150 (3150)",
+          "markdown": false
+        },
+        {
+          "value": 8761752.999999981,
+          "description": "min=1, mean=641.887, max=1536, sum=8761753.0 (13650)",
+          "markdown": false
+        },
+        {
+          "value": 188787,
+          "description": "min=0, mean=17.98, max=64, sum=188787 (10500)",
+          "markdown": false
+        },
+        {
+          "value": 30,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  }
+]
